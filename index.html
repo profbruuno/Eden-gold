@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ton Miner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Ton Miner</h1>
+        <p id="cumulative-toncoin" style="display: none;">Cumulative TON: 0 TON</p>
+        <button id="mine-button" class="circle-button">Start Mining</button>
+        <p id="mining-status">Not mining</p>
+        <p id="toncoin-count">0 TON</p>
+        <div class="social-buttons">
+            <button onclick="location.href='https://telegram.org'">Join Telegram</button>
+            <button onclick="location.href='https://facebook.com'">Join Facebook</button>
+            <button onclick="location.href='https://youtube.com'">Join YouTube</button>
+            <button id="friends-button">My Friends</button>
+        </div>
+        <button id="fetch-rate-button">Fetch TON Exchange Rate</button>
+        <p id="exchange-rate">Exchange Rate: N/A</p>
+        <div id="leaderboard" class="leaderboard">
+            <h2>Top Miners</h2>
+            <ul id="top-miners-list"></ul>
+        </div>
+        <button id="crypto-recommendations-button" class="recommend-button">Recommended Crypto Coins to Buy 👆</button>
+        <button id="support-button">Support</button>
+        <div id="crypto-recommendations" style="display: none;">
+            <h2>Recommended Crypto Coins</h2>
+            <ul id="crypto-list">
+                <li class="crypto-item" data-coin="Dogecoin">Dogecoin (DOGE)</li>
+                <li class="crypto-item" data-coin="Bitcoin">Bitcoin (BTC)</li>
+                <li class="crypto-item" data-coin="Notcoin">Notcoin (NOT)</li>
+                <li class="crypto-item" data-coin="Others">Others coming soon...</li>
+            </ul>
+        </div>
+    </div>
+    <div id="bubbles-container"></div>
+    <audio id="mining-sound" src="https://www.soundjay.com/button/sounds/beep-07.mp3" preload="auto"></audio>
+</body>
+</html>
