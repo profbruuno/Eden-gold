@@ -1,0 +1,174 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #0078d7;
+    margin-bottom: 20px;
+}
+
+.circle-button {
+    background-color: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.circle-button:hover {
+    background-color: #005bb5;
+}
+
+.social-buttons button {
+    background-color: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.social-buttons button:hover {
+    background-color: #005bb5;
+}
+
+#fetch-rate-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+#fetch-rate-button:hover {
+    background-color: #218838;
+}
+
+.recommend-button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.recommend-button:hover {
+    background-color: #e03e00;
+}
+
+#support-button {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+#support-button:hover {
+    background-color: #e0a800;
+}
+
+.leaderboard {
+    margin: 20px 0;
+}
+
+.leaderboard h2 {
+    margin-bottom: 10px;
+}
+
+.leaderboard ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.leaderboard li {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+#crypto-recommendations {
+    margin-top: 20px;
+}
+
+#crypto-recommendations h2 {
+    margin-bottom: 10px;
+}
+
+#crypto-recommendations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#crypto-recommendations li {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+#crypto-recommendations li:hover {
+    background-color: #e9ecef;
+}
+
+#bubbles-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 120, 215, 0.6);
+    border-radius: 50%;
+    animation: rise 4s infinite ease-in;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-200vh);
+    }
+}
